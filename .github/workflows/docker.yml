@@ -47,4 +47,4 @@ jobs:
           IMAGE_TAG: 2024-02-team4
         run: |
           docker build --build-arg DB_PASSWORD=${DB_PASSWORD} --build-arg DB_USERNAME=${DB_USERNAME} --build-arg DB_HOST=${DB_HOST} --build-arg DB_NAME=${DB_NAME} -t $ECR_REGISTRY/ECR_REPOSITORY:IMAGE_TAG .
-          docker push $ECR_REGISTRY/ECR_REPOSITORY:IMAGE_TAG
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
